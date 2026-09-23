@@ -1,0 +1,2404 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Playwrite+DE+SAS+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px)and (max-width: 991px) {
+    .container {
+        width: 750%;
+    }
+
+}
+
+@media (min-width: 968px)and (max-width: 1199px) {
+    .container {
+        width: 970%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+
+
+    direction: ltr;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+ul {
+
+    list-style: none;
+}
+
+
+
+
+.container {
+
+
+
+    direction: ltr;
+    overflow-x: hidden !important;
+    margin: auto;
+
+  
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* start header style  */
+header {
+    background-color: rgb(245, 241, 241);
+    position: relative;
+    position: sticky;
+    top: 0;
+
+    z-index: 2000;
+}
+
+
+header .container {
+    display: flex;
+    padding: 0 10px;
+    height: 70px;
+
+    width: 100%;
+
+
+
+
+}
+
+
+header .container .logo img {
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgb(234, 175, 175);
+}
+
+header .container nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.container nav ul {
+    display: flex;
+    font-size: small;
+
+}
+
+@media (max-width: 768px) {
+    header .container nav {
+        justify-content: end;
+        margin-left: 30px;
+    }
+
+    header .container ul {
+        display: none;
+    }
+
+
+    header .container .social {
+
+        display: none;
+    }
+
+
+
+.container nav ul li a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+  
+    padding: 20px 20px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 15px;
+    transition: 1.3s;
+    color: rgb(9, 0, 0);
+    justify-content: center;
+    align-content: center;
+}
+}
+
+header .container {
+    display: flex;
+    margin: auto;
+
+
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+
+}
+
+
+
+header.container nav ul li a.active,
+header.container nav ul li a:hover {
+
+    color: rgb(239, 241, 243);
+    background-color: rgb(209, 158, 158);
+}
+
+
+@media (min-width: 768px) {
+    .container nav ul li a:hover {
+
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: block;
+        margin: 8px;
+
+        padding: 20px 20px;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 15px;
+        transition: 1.3s;
+        color: rgb(9, 0, 0);
+        justify-content: center;
+        align-content: center;
+
+        background-color: rgb(209, 158, 158);
+        text-decoration: none;
+
+
+        scale: 1.01;
+
+
+        transition: 0.3s;
+
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+    }
+    
+
+.container nav ul li a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    margin: 8px;
+
+    padding: 20px 20px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 15px;
+    transition: 1.3s;
+    color: rgb(9, 0, 0);
+    justify-content: center;
+    align-content: center;
+}
+
+}
+
+.container .social {
+    justify-content: center;
+    display: flex;
+}
+
+
+section .container .social {
+    width: 150px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+header .container .social :hover {
+    background-color: rgb(248, 244, 244);
+    color: rgb(15, 12, 12);
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+.nav-tog {
+    cursor: pointer;
+   
+
+
+}
+
+/* هون من اجل اظهار مافي داخل الايقونة */
+/* 
+
+.nav-tog:hover+ul {
+   
+}  */
+
+
+
+@media (max-width: 768px) {
+    .mobile-nav1 {
+        display: flex !important;
+
+        flex-direction: column !important;
+        /* هذا ما يجبر اللينكات على النزول تحت بعضها */
+
+        position: absolute !important;
+        color: black;
+        top: 80%;
+        right: 0;
+        width: 100%;
+        background-color: rgb(216, 196, 196);
+
+        padding: 10px 0;
+        height: 243px !important;
+
+        list-style: none;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    header .container ul .mobile-nav1 li {
+        display: block;
+        width: 100%;
+
+    }
+
+    /* 3. استهداف الروابط الداخلية (a) لمنع أي تراكب قديم ولتوزيع المساحة */
+    .mobile-nav1 li a {
+        display: block !important;
+        width: 100%;
+        font-size: 20px;
+       
+        text-align: center;
+        color: rgb(14, 15, 16);
+        text-decoration: none;
+     
+        transition: 0.3s;
+        border-bottom: 1px solid rgb(79, 78, 78);
+        cursor: pointer;
+    }
+
+
+    .container nav ul li a:hover {
+
+
+        background-color: rgb(209, 158, 158);
+        text-decoration: none;
+
+        display: block;
+
+        scale: 1.01;
+
+        width: 100%;
+
+        transition: 0.3s;
+
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+    }
+}
+
+/* هنا من اجل التحكم بالشاشات الكبيرة */
+
+
+
+
+
+@media (min-width: 768px) {
+    .nav-tog {
+        display: none;
+
+    }
+
+
+.hero .hero-info {
+
+
+    height: 100%;
+    background-position: center;
+
+    font-family: 'Almarai';
+
+    font-size: 30px;
+
+    justify-content: flex-start;
+
+    text-align: center;
+    margin-bottom: 115px;
+    margin-right: 50px;
+    padding-bottom: 115px;
+    padding-right: 50px;
+
+}
+}
+
+
+
+
+.container .social i {
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    font-size: 20px;
+
+    color: aliceblue;
+    background-color: rgb(194, 158, 158);
+
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* end header style  */
+
+
+
+/* هنا من اجل التحكم في شاشة الموبايل*/
+
+
+@media (max-width: 768px) {
+    .hero {
+
+
+        height: 100%;
+        background-position: center;
+
+        font-family: 'Almarai';
+        display: flex;
+        font-size: 10px;
+
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 50px;
+        padding-bottom: 200px;
+
+    }
+
+    .hero h2 {
+
+        color: rgb(209, 158, 158);
+        font-size: 60px;
+        font-weight: 150;
+        font-family: 'Dancing Script', cursive;
+        padding-top: px;
+        padding-left: px;
+        color: rgb(209, 158, 158);
+
+    }
+
+
+    .hero-2 {
+        background-color: rgb(209, 158, 158);
+        color: black;
+        width: 200px;
+        height: 25PX;
+
+
+        overflow-y: hidden;
+
+        font-size: 20PX;
+        border-radius: 10PX;
+
+        cursor: pointer;
+    }
+
+
+    .hero .container .hero-info h2 {
+        margin-left: 5px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 30px;
+
+    }
+
+    .hero .container .hero-info p {
+        margin-left: 5px;
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+        font-size:20px;
+
+
+    }
+
+    .hero .hero-info .social {
+        margin:10px;
+    }
+
+    .services .container h2 {
+        font-size: 5px;
+        text-align: center;
+        overflow: hidden;
+        display: flex;
+    }
+
+
+
+
+
+    .servicess .container .imag .service img {
+        border-radius: 5%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .services .container .imag .service img {
+        background-color: rgb(252, 237, 237);
+        margin: 10px;
+        border-radius: 8%;
+        transition: 1s;
+        grid-template-columns: auto;
+        justify-content: space-between;
+        flex-direction: column;
+
+        border: 1px solid rgb(52, 50, 50);
+
+    }
+
+
+
+
+
+.hero .hero-info {
+
+
+    height: 100%;
+    background-position: center;
+
+    font-family: 'Almarai';
+
+    font-size: 30px;
+
+    justify-content: flex-start;
+
+    text-align: center;
+   
+
+}
+
+}
+
+
+
+.hero .container .hero-2 {
+    background-color: rgb(209, 158, 158);
+    width: 200px;
+    color: black;
+    height: 25PX;
+
+    text-align: center;
+    border-radius: 10PX;
+    font-size: 20PX;
+}
+
+
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.hero-2:hover {
+    scale: 1.1;
+    transition: 1s;
+}
+
+h2 {
+    position: relative;
+    color: rgb(209, 158, 158);
+    font-size: 70px;
+    font-weight: 150;
+    font-family: 'Dancing Script', cursive;
+    margin: auto;
+}
+
+.hero {
+
+    background-image: url(../images/صور\ خلفية\ 4.jpg);
+    height: 100vh;
+    background-position: start;
+
+    font-family: 'cairo';
+    display: flex;
+    font-size: 30px;
+
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.hero-2 {
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.hero .hero-info .social i:hover {
+    background-color: rgb(209, 158, 158);
+    color: aliceblue
+}
+
+.hero .hero-info .social {
+    margin: auto;
+}
+
+/*هنا انتهينا من الصفحه الاولى للمشروع */
+
+/* هنا رح نبدأ بالصفحه التانية للمشروع */
+
+
+
+
+
+
+.services h2 {
+
+    color: rgb(225, 157, 157);
+    padding: 20px;
+    margin: 10PX;
+    font-size: 70px;
+    font-weight: 20px;
+
+    text-align: center;
+}
+
+.services p {
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .services .imag {
+        margin-left: 100px;
+        margin-right: 100px;
+        display: grid;
+        width: 50%;
+        max-width: 1200px;
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 30px;
+
+    }
+
+
+    .services .imag .service {
+        margin-top: 20px;
+        margin-left: 100px;
+        margin-bottom: 20px;
+        background-color: #faf6f6;
+        border: 1px solid rgb(136, 135, 135);
+    }
+
+    .services .container {
+
+        background-image: url(../images/background.png);
+        background-position: cover;
+        background-attachment: fixed;
+        background-color: rgba(255, 255, 255, 0.5);
+        background-position: cover;
+        background-attachment: fixed;
+        background-color: rgba(255, 255, 255, 0.5);
+
+        height: 1100px;
+
+
+    }
+}
+
+.services .imag h3 {
+    color: rgb(209, 158, 158);
+    font-size: 25px;
+
+}
+
+
+
+.services .imag .service:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.services .container i {
+    color: rgb(209, 158, 158);
+}
+
+
+.services .container img {
+    display: block;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+
+    .services .imag {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 !important;
+        margin-top: 20px !important;
+        gap: 30px;
+
+    }
+
+
+
+
+
+
+    .services .imag .service:hover {
+        scale: 1.1;
+        cursor: pointer;
+    }
+
+    .services .container i {
+        color: rgb(209, 158, 158);
+    }
+
+    .services .container {
+        background-image: url(../images/background.png);
+        background-position: cover;
+        background-attachment: fixed;
+        background-color: rgba(255, 255, 255, 0.5);
+        background-position: cover;
+        background-attachment: fixed;
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 3700px;
+        overflow: hidden;
+    }
+
+    .services .container img {
+        display: block;
+        overflow: hidden;
+    }
+
+
+    .services .imag .service {
+        margin-top: 20px auto;
+        width: 70%;
+
+        padding: 0 !important;
+        overflow: hidden;
+        background-color: #e9e4e4;
+        border: 1px solid rgb(136, 135, 135);
+        overflow: hidden;
+    }
+
+    .services .imag .service img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+.imag .service {
+    text-align: center;
+
+
+}
+
+/* هنا انتهينا من صور الكيك */
+
+
+
+
+.services .imag .service:hover {
+    scale: 1.01;
+    cursor: pointer;
+}
+
+
+/* هنا نبدا في لوحه الاحصائيات */
+/* هنا في النص العلوي       */
+@media (max-width: 768px) {
+    .dverlay {
+        direction: rtl !important;
+
+
+        padding: 20px;
+        margin: 10px;
+        font-size: 10px;
+        font-family: 'Tajawal';
+
+
+    }
+
+    .dverlay h2 {
+        text-align: center;
+        font-family: 'Tajawal';
+        font-size: 50px;
+
+    }
+
+    .dverlay p {
+        margin-bottom: 10px;
+        text-align: start;
+        font-size: 20px;
+        padding-right: 5px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+
+    }
+
+
+    .servicess {
+
+        margin-top: 10px;
+        padding-top: 10px;
+        justify-content: space-between;
+        font-size: 50px;
+        overflow-y: visible;
+    }
+
+    .services h2 {
+        font-size: 40PX;
+
+    }
+
+
+    .container .count {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+}
+
+
+.dverlay {
+
+    font-family: 'Tajawal';
+}
+
+
+.dverlay p {
+
+    text-align: start;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.servicess .dverlay h2 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+
+}
+
+/* هنا انتهينا من النص    */
+
+/* هلق رح نبدأ بالاحصائيات */
+
+
+
+
+
+@media (min-width:768px) {
+
+
+    .servicess .container .count {
+
+        top: 0;
+        left: 0;
+        margin: 5px;
+        direction: rtl !important;
+        background-image: url(../images/صورة\ عامه\ 2.jpg);
+        background-repeat: repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-color: rgba(17, 13, 13, 0.187);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+        height: 450px;
+        position: relative;
+        margin-top: 5px;
+
+    }
+
+    .servicess .container {
+
+      background-color: #eee;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+
+    .images .container h2 {
+        padding: 30px 0;
+        margin: 5px;
+        font-size: 100px;
+        text-align: center;
+        color: rgb(208, 173, 173);
+        justify-content: center;
+        font-family: 'Almarai';
+        font-weight: 300;
+    }
+
+    .servicess {
+
+        margin-top: 5px;
+        padding-top: 5px;
+        justify-content: space-between;
+        font-size: 20px;
+        overflow-y: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .servicess .container .count {
+        top: 5px;
+        left: 10px;
+
+        margin: auto;
+        direction: rtl !important;
+        background-image: url(../images/صورة\ عامه\ 2.jpg);
+        background-repeat: repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-color: rgba(240, 248, 255, 0.364);
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+    }
+
+    .servicess .container {
+        overflow: hidden;
+    }
+
+    .stat P {
+
+        background-color: rgba(240, 233, 233, 0.322);
+        text-align: center;
+        padding: 10px;
+
+        font-size: 20px;
+        margin: -50px 10px;
+        width: 100px;
+        cursor: pointer;
+        border: 1px solid rgba(0, 0, 0, 0.294);
+        font-family: 'cairo';
+        overflow: hidden;
+
+    }
+
+
+    .stat {
+        padding: 5px 10px;
+        margin: 100px;
+        width: 100%;
+        height: 40px;
+
+    }
+
+}
+
+
+.container .count {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+
+.stat P {
+
+    background-color: rgba(240, 233, 233, 0.322);
+    text-align: center;
+    padding-top: 10px;
+    height: 100px;
+    font-size: 20px;
+
+    width: 200px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.294);
+    font-family: 'cairo';
+
+
+}
+
+.stat P:hover {
+    scale: 1.1;
+    transition: 1s;
+}
+
+
+
+
+.stat {
+    padding: 20px 0;
+    margin: 100px;
+    width: 100%;
+    height: 40px;
+
+}
+
+/* هنا قد انتهينا من لوحة الاحصائيائيات      */
+/* هلق  رح نبدأ بالنص مع الصور     */
+/* start about-us section */
+
+
+.about-us {
+    width: 90%;
+
+    vertical-align: top;
+    overflow: hidden;
+}
+
+
+
+.line-heart {
+    text-align: center;
+    color: rgb(209, 158, 158);
+    width: 100%;
+    font-size: 20px;
+}
+
+.about-info {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+
+.about-us .container {
+    margin-left: 100px;
+    padding: 5px 0;
+    display: flex;
+    overflow-y: hidden;
+
+
+}
+
+@media (max-width: 768px) {
+
+
+    .about-us .container {
+        width: 400px;
+        display: flex;
+        flex-direction: column-reverse;
+
+        margin: 5px 30px;
+
+
+    }
+
+    .about-us h2 {
+        text-align: center;
+
+        vertical-align: top;
+        font-size: 30px;
+        color: rgb(209, 158, 158);
+    }
+
+    /* .about-us p {
+        font-size: 20px;
+        line-height: 1.1;
+        width: 90%;
+        font-family: 'Dancing Script', cursive;
+        margin-top: 1px;
+    } */
+
+    .about-us .about-img {
+
+        background-color: rgb(209, 158, 158);
+        height: auto;
+        align-items: center;
+        width: 100%;
+        object-fit: cover;
+
+        border-radius: 5px;
+
+    }
+
+    .about-us p {
+        font-size: 35px;
+        line-height: 1.5;
+        width: 90%;
+
+        font-family: 'Dancing Script', cursive;
+
+    }
+}
+
+
+.about-info,
+.about-img {
+    width: 50%;
+}
+
+.about-us h2 {
+
+    text-align: center;
+    vertical-align: top;
+    font-size: 50px;
+    color: rgb(209, 158, 158);
+}
+
+
+
+.about-us p {
+    font-size: 25px;
+    line-height: 1.1;
+    font-family: 'cairo';
+
+    width: 80%;
+    color: rgb(107, 104, 104);
+    margin-top: 5px;
+}
+
+/* هنا بدأنا بتنسيق الزر أضغط هنا  */
+.about-us .about-call {
+    color: aliceblue;
+    background-color: rgb(209, 158, 158);
+    border: none;
+    padding: 10px 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+}
+
+.about-us .about-call::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(191, 163, 126);
+    transform: 0, 4s;
+    z-index: -1;
+}
+
+.about-us .about-call:hover::before {
+    width: 50%;
+
+
+}
+
+.box i {
+    padding-top: 30px;
+}
+
+.about-us .about-call::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: rgb(191, 163, 126);
+    transform: 0.4s;
+    z-index: -1;
+}
+
+.about-us .about-call:hover::after {
+    width: 50%;
+
+    transform: 0.4s;
+}
+
+/* هنا أنتهينا من تنسيق الزر أضغط هنا  */
+.about-us .about-img {
+
+    background-color: rgb(209, 158, 158);
+    height: 450px;
+}
+
+.about-us .about-img img {
+    transform: translate(-10px, -10px);
+
+}
+
+.about-us .about-info {
+    justify-content: space-between;
+
+    line-height: 1.7;
+    justify-content: center;
+
+    transition: 0.4s;
+    cursor: pointer;
+
+
+}
+
+
+.about-us .container .about-info {
+    width: 100%;
+}
+
+.about-us .about-info .stretss {
+    font-size: 10px;
+    font-family: 'cairo';
+
+}
+
+@media (min-width: 768px) {
+
+    .about-us .about-img img {
+        transform: translate(-10px, -10px);
+        margin-right: 20px;
+        width: 1000px;
+    }
+
+    .about-info {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .about-us .container {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-left: 100px;
+
+    }
+
+    .about-us p {
+        font-size: 35px;
+        line-height: 1.5;
+        width: 90%;
+        font-family: 'Almarai';
+        margin-top: -80px;
+    }
+
+}
+
+/* end about-us section */
+/* هون خلصنا النص مع الكتابه   */
+/* هنا رح نبدأ بقليل من الاضافات تحت الصورة و النص  */
+.items {
+    padding: 5px 25px;
+
+}
+
+.items .container {
+
+    margin: 20px auto;
+    justify-content: space-around;
+    max-width: 1800px;
+    display: flex;
+
+    width: 90%;
+    align-items: center;
+
+}
+
+.items .box:hover {
+    cursor: pointer;
+    scale: 1.03;
+    transition: 1s;
+
+}
+
+.items .box {
+
+    font-family: 'Almarai';
+    text-align: center;
+    flex: 1;
+    max-width: 1000px;
+    margin: 20px;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: 1s;
+    padding: 5px;
+
+    background-color: rgb(253, 218, 218);
+    border: 2px solid rgba(143, 121, 121, 0.369);
+
+
+}
+
+.items .box i {
+    color: rgb(214, 161, 161);
+    font-size: 40px;
+    margin-bottom: 8px;
+    font-weight: 600;
+
+}
+
+.items .box h3 {
+    color: rgb(191, 163, 126);
+    font-size: 30px;
+
+    font-family: 'Almarai';
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.items .box p {
+    font-family: 'Arial';
+    font-size: 20px;
+    color: rgb(194, 172, 145);
+    line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+    .items {
+        padding: 5px 0;
+        background-color: #ffffff;
+
+    }
+
+
+    .items .container {
+        flex-direction: column;
+        gap: 45px;
+        padding: 30px 0;
+
+
+    }
+
+    .items .box i {
+        font-size: 40px;
+
+    }
+
+    .items .box p {
+        display: 15px;
+        font-size: 20px;
+    }
+
+    .items .box h3 {
+
+        font-size: 30px;
+    }
+
+
+    .items .box {
+        max-width: 95%;
+        width: 100%;
+        padding: 15px;
+    }
+
+}
+
+/* هنا انتهينا من الاضافات   */
+
+/* حلويات المتوفرة Available Sweets  رح نبدا في ال */
+/* start courses */
+
+
+.couruses h2 {
+    text-align: center;
+    font-size: 60px;
+    padding: auto;
+    margin: auto;
+}
+
+.couruses p {
+    direction: ltr;
+    left: 10px;
+    margin: 10px;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.couruses .container p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.couruses .all-couruses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    overflow: hidden;
+}
+
+.couruses .all-couruses .course {
+    background-color: #ffffff;
+    border: 1px solid black;
+    text-align: center;
+    padding-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #e4e0e0;
+    border-radius: 5px;
+    position: relative;
+
+}
+
+.couruses .all-couruses .course img {
+
+}
+
+
+
+.couruses .all-couruses .course .course-title {
+
+    font-size: 30px;
+    color: rgb(209, 158, 158);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.couruses .all-couruses .course .course-title p {
+    color: rgb(75, 74, 74);
+    line-height: 1.7;
+    margin-bottom: 50px;
+    height: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.course-price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.course-price div :last-child {
+    color: red;
+    font-weight: 700;
+    text-decoration: line-through;
+}
+
+hr {
+    width: 80%;
+    transform: translatex(-10%);
+    margin-bottom: 15px;
+}
+
+.course-details {
+    background-color: rgb(209, 158, 158);
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 90%;
+    cursor: pointer;
+}
+
+.course-details:hover {
+    transition: 1s;
+    color: rgb(109, 107, 107);
+    background-color: rgba(244, 183, 183, 0.724);
+}
+
+@media (min-width: 768px) {
+
+    .couruses {
+        margin-left: 110px;
+        justify-content: space-between;
+        margin-top: 0px;
+
+    }
+
+
+
+
+    .course-price :last-child {
+        font-size: 21px;
+        font-weight: 700;
+
+    }
+
+
+
+    
+
+
+}
+
+@media (max-width: 768px) {
+
+    .couruses {
+        margin: 10px;
+
+        margin-top: 0px;
+
+    }
+
+    .couruses .all-couruses .course img {
+
+        width: 250px;
+        height: 250px;
+        border-radius:50%;
+        margin-top:20px;
+
+    }
+
+
+
+    .couruses .all-couruses .course {
+        background-color: #ffffff;
+        border: 1px solid rgba(83, 78, 78, 0.819);
+        text-align: center;
+        width: 350px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 0 10px #e4e0e0;
+        border-radius: 5px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        margin: 10px 15px;
+
+    }
+
+    .couruses .all-couruses {
+        margin: 30px 0px;
+        padding: 20px 0px;
+
+    }
+
+}
+
+
+/* حلويات المتوفرة Available Sweets  انتهى تنسيقات*/
+/* end courses */
+
+
+/* فريقنا الاحترافي our-team  رح نبدا في ال */
+/* start our-team */
+
+.our-team h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: auto;
+    margin: auto;
+}
+
+.our-team p {
+    direction: ltr;
+    left: 10px;
+    margin: 10px;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.our-team {
+    background-color: #eee;
+    padding: 70px 0;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+
+
+@media (min-width: 768px) {
+
+    .our-team .team-countaner {
+        margin-left: 150px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+        gap: 15px;
+
+    }
+
+
+
+    .team-box {
+        background-color: whitesmoke;
+        height: 550px;
+        width: 240px;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        gap: 30px;
+        cursor: pointer;
+
+        overflow-y: hidden;
+        transition: 0.5s;
+        border: 1px solid rgb(94, 93, 93);
+        box-shadow: 0 0 10px rgb(92, 91, 91);
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .team-box {
+        background-color: whitesmoke;
+        height: 550px;
+        width: 350px;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        gap: 30px;
+        cursor: pointer;
+
+        overflow-y: hidden;
+        transition: 0.5s;
+        border: 1px solid rgb(94, 93, 93);
+        box-shadow: 0 0 10px rgb(92, 91, 91);
+    }
+
+    .our-team .team-countaner {
+        margin-left: -2px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+        gap: 15px;
+
+    }
+
+}
+
+.team-box:hover {
+    transform: translateY(-10px);
+
+}
+
+.team-box:hover img {
+    filter: grayscale(100%);
+
+}
+
+.img-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.img-social .social {
+    display: flex;
+    padding-top: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-social .social i {
+    margin: 5px;
+
+    font-size: 16px;
+
+}
+
+.img-social .social i:hover {
+    background-color: rgb(246, 227, 227);
+    transition: 1s;
+    color: black;
+    transform: translate(2px);
+}
+
+.our-team .team-countaner {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.img-social img {
+    margin-left: 10px;
+    padding: 5px;
+
+}
+
+.team-info h3 {
+    margin-left: 100px;
+    font-size:25px;
+   
+    color: rgb(209, 158, 158);
+
+
+}
+
+.team-info p {
+    color: rgb(111, 104, 104);
+    padding-bottom: 20px;
+
+
+}
+
+
+
+/* هنا انتهينا من قسم الفريق الاحترافي */
+/* end team */
+
+
+/* فريقنا الاحترافي our-skills  رح نبدا في ال */
+/* start our-skills */
+.our-skills h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: auto;
+    margin: auto;
+
+}
+
+.our-skills .para {
+    direction: ltr;
+    left: 10px;
+    margin: 10px;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 30px;
+}
+
+
+.our-skills {
+    
+
+    background-image: url(../images/photo-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+@media (min-width: 768px) {
+    .skills-info {
+        margin-left: 110px;
+        margin-bottom: 30px;
+    }
+
+
+    .our-skills .container {
+        margin-right: 120px;
+        margin-left: 100px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .skills-img img {
+        width: 62%;
+
+
+    }
+
+    .progress .prog span {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: rgb(209, 158, 158);
+        transition: 0.4s;
+        cursor: pointer;
+    }
+
+    .counts :last-child {
+        border: 1px solid rgb(207, 200, 200);
+        padding: 2px 3px;
+        border-radius: 2px;
+
+    }
+
+    .skills-info .skill {
+        height: 100px;
+        width: 500px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .our-skills .container {
+        flex-direction: column-reverse;
+
+    }
+
+
+    .skills-info {
+        margin-bottom: 30px;
+        margin-right: 10px;
+    }
+
+    .skills-img img {
+        width: 95%;
+        margin: -2px;
+
+
+    }
+
+    .progress .prog span {
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        background-color: rgb(209, 158, 158);
+        transition: 0.4s;
+        cursor: pointer;
+
+    }
+
+    .progress {
+        margin: 15px;
+    }
+
+    .our-skills .container {
+        margin-right: 30px;
+        margin-left: 10px;
+
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .skills-info .skill {
+        height: 80px;
+        width: 400px;
+
+    }
+
+    .counts :last-child {
+        border: 1px solid rgb(207, 200, 200);
+        padding: 2px 3px;
+        border-radius: 2px;
+        margin-right: 20px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+
+    }
+
+
+
+}
+
+
+
+.counts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -2px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.counts :first-child {
+    padding: 2px;
+    margin: 2px;
+}
+
+
+.progress .prog {
+    width: 100%;
+    height: 30PX;
+
+    background-color: rgb(96, 91, 91);
+    border-radius: 5PX;
+    position: relative;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+
+.progress .prog span:hover {
+    width: 100% !important;
+}
+
+/* End our-skills */
+
+
+/* start pricing-section  */
+
+.pricing-section h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: auto;
+    margin: auto;
+}
+
+.pricing-section .para {
+    direction: ltr;
+    left: 10px;
+    margin: 10px;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 20PX;
+}
+
+.pricing-section {
+
+    padding: 70px 0;
+    background-color: #eee;
+}
+
+@media (max-width: 768px) {
+
+    .pricing-section .container {
+     
+        margin-left:10px;
+    }
+
+    .plan {
+        background-color: white;
+        text-align: center;
+
+        margin-top: 30px;
+        width: 370px;
+        padding-top: 20px;
+      
+        margin-left:10px;
+        padding-bottom: 25px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.4s;
+        gap: 30px;
+        z-index: 1;
+    }
+    
+.plan-btn {
+    background-color: rgb(209, 158, 158);
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+}
+
+@media (min-width: 768px) {
+
+    .pricing-section .container {
+        margin-left: 100px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+        gap: 30px;
+    }
+
+    .plan {
+        background-color: white;
+        text-align: center;
+
+        margin-top: 30px;
+        width: 300px;
+        padding-top: 20px;
+        margin: 0px 30px;
+        padding-bottom: 25px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.4s;
+        gap: 30px;
+        z-index: 1;
+    }
+    
+.plan-btn {
+    background-color: rgb(209, 158, 158);
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+}
+
+
+.plan:nth-child(2):before,
+.plan:nth-child(4):before {
+    content: "special Offers";
+    font-size: 12px;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(185, 91, 91);
+    top: 10px;
+    left: -60px;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.plan img {
+    padding-top: 10px;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.plan .plan-title {
+    font-size: 15px;
+    margin-top: 20px;
+    color: rgb(209, 158, 158);
+}
+
+.plan .price p:first-child {
+    color: rgb(209, 158, 158);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.plan .price p:last-child {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.plan .price h4:last-child {
+    font-size: 15px;
+}
+
+.plan ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+
+}
+
+.plan ul li {
+    font-size: 15px;
+    padding-left: 20px;
+    color: rgb(117, 116, 116);
+    padding: 20px;
+
+    border-top: 1px solid rgb(223, 221, 221);
+    cursor: pointer;
+    margin-left: 5px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.plan ul li::before {
+    position: absolute;
+    /* هنا من أجل أظهار الايقونة بشكل */
+    content: "\f0d9";
+    text-align: left;
+    font-family: "font awesome 5 free";
+    font-weight: 900;
+
+
+    color: rgb(209, 158, 158);
+    ;
+    top: 50%;
+
+    left: 0;
+    transform: translateY(-40%)
+}
+
+.plan ul li:hover {
+    background-color: #eee;
+
+}
+
+.plan-btn:hover {
+    scale: 1.05;
+}
+
+/* End pricing-section  */
+/* start testimonials  */
+
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: auto;
+    margin: auto;
+}
+
+.testimonials .para {
+    direction: ltr;
+    left: 10px;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.testimonials {
+    padding: 70px 0;
+    padding-bottom: 20px;
+    background-color: #eee;
+    
+}
+
+@media (min-width: 768px) {
+
+    .testimonials .container {
+        margin-left: 100px;
+        margin-right: 100px;
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .testimonials .container {
+        margin-left: 10px;
+        margin-right: 50px;
+
+        width: 95%;
+
+
+        gap: 30px;
+    }
+}
+
+.testimonials .container .testimonial {
+    background-color: white;
+    width: 100%;
+    margin-top: 30px;
+    gap: 15px;
+    padding-top: 50px;
+    margin: 10px;
+    padding: 10px;
+    overflow-y: hidden;
+    height: 300px;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.testimonials .container .testimonial::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    transition: 0.3s;
+    height: 0;
+    background-color: rgb(209, 158, 158);
+
+}
+
+
+.testimonials .container .testimonial::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    transition: 0.3s;
+    height: 3;
+    background-color: rgb(209, 158, 158);
+
+}
+
+.testimonials .container .testimonial:hover::after {
+    width: 50%;
+}
+
+.testimonials .container .testimonial:hover::before {
+    height: 50%;
+}
+
+
+.testimonials .container .testimonial .stars {
+    color: rgb(252, 187, 8);
+}
+
+.testimonial p {
+
+    
+    margin-top: 50px;
+    padding-bottom: 20px;
+
+}
+
+ p .review {
+margin-top: 0;
+}
+
+
+.testimonials .container .testimonial img {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    right: 0;
+margin-right:10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    top: 0px;
+    border: 2px solid rgb(222, 220, 220);
+
+}
+
+.testimonials .container .testimonial:hover {
+    transform: translateY(-5px);
+}
+
+
+/* End testimonials  */
+/* start footer  */
+footer {
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+
+
+
+@media (min-width: 768px) {
+
+    footer .container {
+        gap: 15px;
+        margin-left: 150px;
+        padding-left: 30px;
+        align-items: flex-start;
+        display: grid;
+        grid-template-columns: repeat(auTo-fill, minmax(250px, 1fr));
+    }
+
+    footer .container .section h2 {
+        padding-left: 15PX;
+        color: rgb(154, 122, 122);
+        font-size: 25PX
+    }
+}
+
+
+@media (max-width: 768px) {
+
+
+    footer .container {
+        gap: 15px;
+        margin-left: 5px;
+        padding-left: 5px;
+        display: grid;
+        grid-template-columns: repeat(auTo-fill, minmax(250px, 1fr));
+    }
+
+    footer .container .section h2 {
+        padding-left: 15PX;
+        color: rgb(154, 122, 122);
+        font-size: 35PX
+    }
+}
+
+
+footer .container .section p {
+    color: black;
+    margin-top: 15px;
+    line-height: 1.8;
+    width: 90%;
+}
+
+footer .container .section a {
+    color: rgb(123, 120, 120);
+    font-size: 20px;
+    display: block;
+    margin-top: 15px;
+    transition: 0.3s;
+    position: relative;
+}
+
+footer .container .section a::after {
+    content: "\f0d9";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    color: rgb(209, 158, 158);
+    top: 50%;
+
+    left: -15px;
+    font-size: 12px;
+    transform: translateY(-50%);
+}
+
+footer .container .section a:hover {
+    color: rgb(209, 158, 158);
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+.letter form {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.letter form input[type="text"],
+.letter form input[type="email"] {
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+
+
+    /* من اجل تغيير لون المؤشر  */
+    caret-color: #eee;
+
+}
+
+/* هنا من اجل ازالة شبيه البوردر وهو اوت لين */
+
+.letter form input[type="text"]:focus,
+.letter form input[type="email"]:focus {
+    outline: none;
+}
+
+.letter form input[type="text"],
+.letter form input[type="email"] {
+    background-color: rgb(209, 158, 158);
+    color: aquamarine;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3;
+}
+
+.letter form input[type="text"]:hover,
+.letter form input[type="email"]:hover {
+    background-color: antiquewhite;
+
+    border: 1px solid rgb(209, 158, 158);
+}
+
+.hr-footer {
+    width: 70%;
+    margin-top: 35px;
+    transform: translateX(-15%);
+}
+
+.copyright {
+    text-align: center;
+    color: rgb(130, 87, 87);
+
+}
+
+/* لجعل النص والأيقونات يبدأون من اليمين بشكل مرتب */
+.contact-info {
+    direction: ltr;
+    text-align: right;
+}
+
+/* تنسيق العنوان */
+.contact-info h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.freesh {
+    margin-bottom: 20px;
+
+}
+
+/* تنسيق السطر الواحد (الأيقونة + النص) */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    /* محاذاة من الأعلى */
+    gap: 12px;
+    /* مسافة بين الأيقونة والكلام */
+    margin-bottom: 15px;
+    /* فراغ بين الأسطر */
+    font-size: 14px;
+}
+
+/* تنسيق الأيقونات لتصطف بشكل عمودي مثالي */
+.contact-item i {
+    color: #c08477;
+    /* اللون الوردي للتصميم */
+    margin-top: 3px;
+    width: 20px;
+    text-align: center;
+}
+
+/* لترتيب توقيت السبت والجمعة عمودياً */
+.time-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* start footer  */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: rgb(209, 158, 158);
+    color: white;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    box-shadow: 0 0 3px;
+    z-index:1000;
+    left:5px
+}
+
+.btn-whatsapp:hover {
+    scale: 1.1;
+}
+
+.btn-whatsapp i {
+    font-size: 30px;
+}
